@@ -55,6 +55,14 @@ export const TicketForm = () => {
                 <div className="form-group">
                     <label htmlFor="name">Emergency:</label>
                     <input type="checkbox"
+                                        onChange={
+                                            (evt) => {
+                                                const copy = {...ticket}
+                                                copy.emergency = evt.target.value
+                                                updateTicket(copy)
+                                            }
+                                        }
+                    
                         />
                 </div>
             </fieldset>

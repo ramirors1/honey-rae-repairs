@@ -18,7 +18,7 @@ export const Repairs = () => (
             </>
           );
         } else {
-          return <Redirect to="/login" />;  //redirect is run if the reder function is not true
+          return <Redirect to="/login" />;  //redirect is run if the render function is not true
         }
       }}
     />
@@ -31,3 +31,4 @@ export const Repairs = () => (
     </Route>
   </>
 );
+    
